@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
 function App() {
-  const [fruit, setFruit] = useState("");
+  const [name, setName] = useState("오일남할아버지");
 
   return (
     <div>
-      과일 :{" "}
-      <input
-        value={fruit}
-        onChange={function (event) {
-          setFruit(event.target.value);
-        }}
-      />
+      {name}
       <br />
-      {fruit}
+      <button
+        onClick={function () {
+          setName("숨겨진 반전 ㄷㄷ");
+        }}
+      >
+        클릭
+      </button>
     </div>
   );
 }
