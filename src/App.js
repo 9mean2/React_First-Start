@@ -12,7 +12,6 @@ function App() {
     setId(event.target.value);
   };
 
-  //password 필드가 변경될 경우
   const onPasswordChaneHandler = (event) => {
     setPassword(event.target.value);
   };
